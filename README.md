@@ -10,7 +10,7 @@ git clone https://https://github.com/usmansiddiq000/angular-ngrx-demo-app.git
 
 In the project directory, you can run:
 
-### `npm install`
+`npm install`
 
 ## Development server
 
