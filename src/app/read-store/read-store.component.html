@@ -1,0 +1,11 @@
+<div class="right" *ngIf="tutorials">
+    <h3>Tutorials(output of store)</h3>
+    <ul>
+      <li *ngFor="let tutorial of tutorials | async let i = index">
+        <a (click)="delTutorial(i)" >{{ tutorial.name }}</a>
+        &nbsp;
+        <a [href] = "tutorial.url" target="_blank">{{ tutorial.url }}</a>
+      </li>
+    </ul>
+  
+  </div>

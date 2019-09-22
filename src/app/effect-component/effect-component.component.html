@@ -1,0 +1,20 @@
+<p>This portion is demonstrating effects in ngrx <br/>
+Get Dummy User Rate from external api</p>
+
+
+<div class="right" *ngIf="dummyUser">
+  <p>{{dummyUser.id }}
+    &nbsp;
+    {{dummyUser.title.slice(1,10)}}
+  </p>
+    <!-- <h3>Tutorials(output of store)</h3>
+    <ul>
+      <li *ngFor="let tutorial of dummyUser | async">
+        <a >{{ tutorial.id }}</a>
+        &nbsp;
+        <a >{{ tutorial.title.slice(1,10) }}</a>
+      </li>
+    </ul> -->
+  </div>
+
+<button (click) = "GetCurrencyRate()" class="btn btn-link"> Get Latest Currency rate</button>
