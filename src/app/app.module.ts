@@ -11,9 +11,9 @@ import { UserEffects } from './store/effects/dummyuser.effects'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReadStoreComponent } from './read-store/read-store.component';
-import { WriteStoreComponent } from './write-store/write-store.component';
-import { EffectComponentComponent } from './effect-component/effect-component.component';
+import { ReadStoreComponent } from './components/read-store/read-store.component';
+import { WriteStoreComponent } from './components/write-store/write-store.component';
+import { EffectComponentComponent } from './components/effect-component/effect-component.component';
 
 import { UserService } from './service/user.service';
 

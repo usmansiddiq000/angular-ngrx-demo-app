@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs'
 import { Store } from '@ngrx/store';
-import { AppState } from '../app.state';
-import { Toturial } from '../models/toturial.models';
-import { RemoveToturial } from '../store/action';
+import { AppState } from '../../app.state';
+import { Toturial } from '../../models/toturial.models';
+import { RemoveToturial } from '../../store/action';
 
 
 @Component({

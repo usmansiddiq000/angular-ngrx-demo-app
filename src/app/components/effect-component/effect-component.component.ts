@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs'
 import { Store, select } from '@ngrx/store';
-import { AppState } from '../app.state';
-import { DummyUser } from '../models/dummyuser.model'
-import { GetDummyUser } from '../store/action';
-import { selectesdUser } from '../store/selector/dummyuser.selector';
+import { AppState } from '../../app.state';
+import { DummyUser } from '../../models/dummyuser.model'
+import { GetDummyUser } from '../../store/action';
+import { selectesdUser } from '../../store/selector/dummyuser.selector';
 
 @Component({
   selector: 'app-effect-component',
