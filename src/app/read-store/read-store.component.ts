@@ -24,7 +24,6 @@ export class ReadStoreComponent implements OnInit {
 
   delTutorial(index) {
     this._store.dispatch(new RemoveToturial(index))
-    console.log(this._store.select('Toturial'))
   }
 
 }

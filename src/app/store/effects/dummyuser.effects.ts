@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core'
 import { Action } from '@ngrx/store'
 import { Effect, ofType, Actions, act } from '@ngrx/effects';
 import { switchMap, map } from 'rxjs/operators';
-import { dummyapiactions, GetDummyUser, AddDummyUser } from '../action'
+import { dummyuseractions, GetDummyUser, AddDummyUser } from '../action'
 import { UserService } from '../../service/user.service';
 
 
@@ -16,7 +16,7 @@ export class UserEffects {
 
 @Effect({dispatch: true})
 getUsers$ : Observable<Action> = this._actions$.pipe(
-    ofType(dummyapiactions.GET_USER),
+    ofType(dummyuseractions.GET_USER),
     switchMap((action:any) => {
         return this._userService
         .getUsers(action.payload)

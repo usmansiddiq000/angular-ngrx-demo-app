@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs'
 import { Store, select } from '@ngrx/store';
 import { AppState } from '../app.state';
-import { DummyApi } from '../models/dummyapi.model'
+import { DummyUser } from '../models/dummyuser.model'
 import { GetDummyUser } from '../store/action';
 import { selectesdUser } from '../store/selector/dummyuser.selector';
 
@@ -12,19 +12,21 @@ import { selectesdUser } from '../store/selector/dummyuser.selector';
   styleUrls: ['./effect-component.component.css']
 })
 export class EffectComponentComponent implements OnInit {
-  dummyUser;
+  dummyUser:Object;
 
   constructor(private _store:Store<AppState>) { 
     this._store.pipe(select(selectesdUser))
     .subscribe(data => { console.log(data); this.dummyUser = data});
+    // this._store.select('DummyUser')
+    // .subscribe(f => console.log(f))  //can also use this one, instead of creating selector or method in readComponent
   }
 
   ngOnInit() {
   }
 
   GetCurrencyRate() {
-
-    this._store.dispatch(new GetDummyUser(Math.floor((Math.random() * 10) + 1)))
+    let index = Math.floor((Math.random() * 10) + 1) 
+    this._store.dispatch(new GetDummyUser(index))
   }
 
 }

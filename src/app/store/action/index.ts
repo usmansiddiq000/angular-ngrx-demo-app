@@ -1,2 +1,2 @@
 export {ToturialActions, Actions, AddTutorial, RemoveToturial} from './toturial.action';
-export { DummyApiActions,  GetDummyUser, dummyapiactions, AddDummyUser} from './dummyapi.action';
+export { DummyUserActions,  GetDummyUser, dummyuseractions, AddDummyUser} from './dummyuser.action';

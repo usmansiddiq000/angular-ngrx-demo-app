@@ -7,7 +7,7 @@ import { StoreModule } from '@ngrx/store'
 import { Reducers } from './store/reducer'
 
 import { EffectsModule } from '@ngrx/effects';
-import { UserEffects } from './store/effects/dummyapi.effects'
+import { UserEffects } from './store/effects/dummyuser.effects'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

@@ -1,4 +1,4 @@
-export interface DummyApi {
+export interface DummyUser {
   userId: number,
   id: number,
   title: string,

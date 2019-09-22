@@ -1,7 +1,7 @@
 import { Toturial } from './models/toturial.models';
-import { DummyApi } from './models/dummyapi.model';
+import { DummyUser } from './models/dummyuser.model';
 
 export interface AppState {
     Toturial:Toturial[],
-    DummyUser:DummyApi
+    DummyUser:DummyUser
 }

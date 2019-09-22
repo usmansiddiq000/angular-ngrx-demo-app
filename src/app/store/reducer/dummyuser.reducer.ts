@@ -1,7 +1,7 @@
-import { DummyApi } from '../../models/dummyapi.model';
-import { DummyApiActions, dummyapiactions } from '../action';
+import { DummyUser } from '../../models/dummyuser.model';
+import { DummyUserActions, dummyuseractions } from '../action';
 
-const InitialState:DummyApi =  {
+const InitialState:DummyUser =  {
     "userId": 10,
     "id": 10,
     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
@@ -9,9 +9,9 @@ const InitialState:DummyApi =  {
 }
 
 
-export function DummyApiReducer(state:DummyApi = InitialState, action:DummyApiActions) {
+export function DummyUserReducer(state:DummyUser = InitialState, action:DummyUserActions) {
     switch(action.type) {
-        case dummyapiactions.ADD_USER:
+        case dummyuseractions.ADD_USER:
             return action.payload
         default:
             return state
