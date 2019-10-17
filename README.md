@@ -8,7 +8,7 @@ git clone https://https://github.com/usmansiddiq000/angular-ngrx-demo-app.git
 ```
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run: 
 
 `npm install`
 
